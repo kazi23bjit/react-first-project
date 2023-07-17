@@ -1,0 +1,43 @@
+/* Navbar.css */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 50px; /* Adjust the left position to match the width of the sidebar */
+    right: 0;
+    z-index: 100; /* Ensure the navbar appears above the sidebar */
+  }
+  
+  .breadcrumb {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .breadcrumb li:not(:last-child)::after {
+    content: '>';
+    margin: 0 10px;
+  }
+  
+  .breadcrumb li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile span {
+    margin-left: 5px;
+  }
+  
